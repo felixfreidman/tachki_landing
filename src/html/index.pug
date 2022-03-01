@@ -7,21 +7,32 @@ html(lang="en")
         link(rel="stylesheet", href="./style.min.css")
         title Выкуп автомобилей
     body
-        main.main
+        main.main#toBegin
             .header-block 
                 .logo-block 
-                    img(src="./assets/images/content/logo.png", alt="")
+                    a(href="#toBegin")
+                        img(src="./assets/images/content/logo.svg", alt="Logo image: Tachki Logo")
                 .navigation
-                    a(href="#form").navigation-link Безопасность
-                    a(href="#form").navigation-link Документы
-                    a(href="#form").navigation-link Мы выкупаем
-                    a(href="#form").navigation-link Этапы
-                    a(href="#form").navigation-link Контакты
+                    a(href="#form").navigation__link Безопасность
+                    a(href="#form").navigation__link Документы
+                    a(href="#form").navigation__link Мы выкупаем
+                    a(href="#form").navigation__link Этапы
+                    a(href="#form").navigation__link Контакты
                 .order-button#sellauto Хочу продать авто
             .main-wrapper
-                .builging-block.greeting-block
+                .building-block.greeting-block
+                    .building-block__container
+                        .building-block__header
+                            span Выкупим ваш автомобиль 
+                            | в день обращения до 
+                            span 90% 
+                            | от рыночной цены
+                        .building-block__subheader Узнайте стомость вашего автомобиля за 3 минуты 
+                        .building-block__button Узнать стоимость
+                    img(src="./assets/images/content/header3.png", alt="Header Image: Man, car").greeting-block__image
+                    
                 .building-block.benefit-block
-                .builging-block.sign-block
+                .building-block.sign-block
                 .building-block.buyout-block 
                 .building-block.compare-block
         footer.footer 
