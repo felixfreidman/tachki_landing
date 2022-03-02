@@ -17,7 +17,7 @@ html(lang="en")
                     a(href="#safety").navigation__link Безопасность
                     a(href="#docs").navigation__link Документы
                     a(href="#buyout").navigation__link Мы выкупаем
-                    a(href="#stages").navigation__link Этапы
+                    a(href="#stages").navigation__link Почему мы?
                     a(href="#contact").navigation__link Контакты
                 .order-button#sellauto Хочу продать авто
             .main-wrapper
@@ -77,9 +77,8 @@ html(lang="en")
                                 .unit-image 
                                     img(src="./assets/images/content/check.svg", alt="")
                                 .unit-header ПСТС
-                                .unit-subheader Паспорт собственника транспортного средства  
-
-                .building-block.buyout-block
+                                .unit-subheader Паспорт собственника транспортного средства
+                #buyout.building-block.buyout-block
                     .buyout-header Какие авто мы выкупаем?
                     #buyoutSwiper.swiper.buyout
                         .swiper-wrapper
@@ -110,8 +109,62 @@ html(lang="en")
                         .swiper-navigation 
                             .swiper-button-next 
                             .swiper-button-prev 
-                .building-block.compare-block
-        footer.footer 
+                #stages.building-block.compare-block
+                    .compare-container.compare-container--small 
+                        .container-header Продайте авто сами
+                        .container-list 
+                            .list-item 
+                                .list-mark 
+                                    img(src="./assets/images/content/checkmark.svg", alt="checkmark sign")
+                                .list-header Продажа по цене близкой к среднерыночной 
+                            .list-item 
+                                .list-mark
+                                    img(src="./assets/images/content/cross.svg", alt="checkmark sign").cross-sign
+                                .list-header Долго и зачастую безуспешно
+                            .list-item 
+                                .list-mark
+                                    img(src="./assets/images/content/cross.svg", alt="checkmark sign").cross-sign
+                                .list-header Получаете деньги, как найдете покупателя
+                            .list-item 
+                                .list-mark
+                                    img(src="./assets/images/content/cross.svg", alt="checkmark sign").cross-sign
+                                .list-header Есть риски при продаже перекупщикам 
+                    .compare-container 
+                        .container-header Продажа нам
+                        .container-list 
+                            .list-item 
+                                .list-mark
+                                    img(src="./assets/images/content/checkmark.svg", alt="checkmark sign")
+                                .list-header Платим до 90% от рыночной цены
+                            .list-item 
+                                .list-mark
+                                    img(src="./assets/images/content/checkmark.svg", alt="checkmark sign")
+                                .list-header Деньги вы получаете в день оценки
+                            .list-item 
+                                .list-mark
+                                    img(src="./assets/images/content/checkmark.svg", alt="checkmark sign")
+                                .list-header Выкупаем неликвидные и технически проблемные авто
+                            .list-item 
+                                .list-mark
+                                    img(src="./assets/images/content/checkmark.svg", alt="checkmark sign")
+                                .list-header Даем юридические гарантии (заключаем договор)
+                    .compare-container.compare-container--small 
+                        .container-header Продажа перекупщикам
+                        .container-list 
+                            .list-item 
+                                .list-mark
+                                    img(src="./assets/images/content/checkmark.svg", alt="checkmark sign")
+                                .list-header Деньги вы получаете сразу
+                            .list-item 
+                                .list-mark
+                                    img(src="./assets/images/content/cross.svg", alt="checkmark sign").cross-sign
+                                .list-header Цена в лучшем случае 70-80% от рыночной
+                            .list-item 
+                                .list-mark
+                                    img(src="./assets/images/content/cross.svg", alt="checkmark sign").cross-sign
+                                .list-header Авто числится на Вас до момента переоформления на реального покупателя
+                            
+        footer#contact.footer 
         script(src="./assets/js/jquery.min.js")
         script(src="./assets/js/plugins.min.js")
         script(src="./assets/js/main.min.js")
