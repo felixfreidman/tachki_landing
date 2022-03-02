@@ -5,6 +5,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="./style.min.css")
+        link(rel="shortcut icon", href="./assets/images/content/logo.svg", type="image/x-icon")
         title Выкуп автомобилей
     body
         main.main#toBegin
@@ -13,11 +14,11 @@ html(lang="en")
                     a(href="#toBegin")
                         img(src="./assets/images/content/logo.svg", alt="Logo image: Tachki Logo")
                 .navigation
-                    a(href="#form").navigation__link Безопасность
-                    a(href="#form").navigation__link Документы
-                    a(href="#form").navigation__link Мы выкупаем
-                    a(href="#form").navigation__link Этапы
-                    a(href="#form").navigation__link Контакты
+                    a(href="#safety").navigation__link Безопасность
+                    a(href="#docs").navigation__link Документы
+                    a(href="#buyout").navigation__link Мы выкупаем
+                    a(href="#stages").navigation__link Этапы
+                    a(href="#contact").navigation__link Контакты
                 .order-button#sellauto Хочу продать авто
             .main-wrapper
                 .building-block.greeting-block
@@ -31,8 +32,53 @@ html(lang="en")
                         .building-block__button Узнать стоимость
                     img(src="./assets/images/content/header3.png", alt="Header Image: Man, car").greeting-block__image
                     
-                .building-block.benefit-block
-                .building-block.sign-block
+                #safety.building-block.benefit-block
+                    .benefit-block__header Безопасно и быстро
+                    .benefit-block__container 
+                        .benefit-block__unit 
+                            .unit-image 
+                                img(src="./assets/images/content/clear.svg", alt="")
+                            .unit-header Чистота сделки
+                            .unit-subheader Гарантируем безопасность и юридическую чистоту сделки            
+                        .benefit-block__unit 
+                            .unit-image
+                                img(src="./assets/images/content/docs.svg", alt="")
+                            .unit-header Пакет документов
+                            .unit-subheader Оформим бесплатно и привезем на встречу пакет документов для продажи авто
+                        .benefit-block__unit 
+                            .unit-image 
+                                img(src="./assets/images/content/check.svg", alt="")
+                            .unit-header Диагностика авто
+                            .unit-subheader Проведем независимую и подробную диагностику вашего автомобиля при оценке
+                        .benefit-block__unit 
+                            .unit-image 
+                                img(src="./assets/images/content/money.svg", alt="")
+                            .unit-header Деньги при встрече
+                            .unit-subheader Переведем деньги наличными / на карту или на расчетный счет в течение 3 часов
+                #docs.building-block.sign-block
+                    .sign-subblock 
+                        .sign-header Запишитесь на встречу
+                        .sign-subheader для оценки и продажи автомобиля
+                        .sign-button записаться
+                    .sign-subblock.sign-subblock--big
+                        .sign-header--big Для продажи авто вам необходимо:
+                        .sign-container 
+                            .sign-unit 
+                                .unit-image 
+                                    img(src="./assets/images/content/clear.svg", alt="")
+                                .unit-header ПТС
+                                .unit-subheader Паспорт транспортного средства 
+                            .sign-unit 
+                                .unit-image 
+                                    img(src="./assets/images/content/docs.svg", alt="")
+                                .unit-header СТС
+                                .unit-subheader Свидетельство о регистрации 
+                            .sign-unit 
+                                .unit-image 
+                                    img(src="./assets/images/content/check.svg", alt="")
+                                .unit-header ПСТС
+                                .unit-subheader Паспорт собственника транспортного средства  
+
                 .building-block.buyout-block 
                 .building-block.compare-block
         footer.footer 
