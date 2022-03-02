@@ -1,4 +1,3 @@
-// header-swiper
 var swiper = new Swiper("#buyoutSwiper", {
     fadeEffect: "cards",
     navigation: {
@@ -27,4 +26,19 @@ var swiper = new Swiper("#buyoutSwiper", {
             spaceBetween: 40,
         },
     },
+});
+
+const allButtons = document.querySelectorAll(".modalToggle");
+const darkLayer = document.getElementById("darkLayer");
+const darkLayerForm = document.getElementById("darkLayerForm");
+allButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        darkLayer.classList.remove("js--hidden");
+        darkLayerForm.classList.remove("js--hidden");
+    });
+});
+
+darkLayer.addEventListener("click", () => {
+    darkLayer.classList.add("js--hidden");
+    darkLayerForm.classList.add("js--hidden");
 });

@@ -19,7 +19,7 @@ html(lang="en")
                     a(href="#buyout").navigation__link Мы выкупаем
                     a(href="#stages").navigation__link Почему мы?
                     a(href="#contact").navigation__link Контакты
-                .order-button#sellauto Хочу продать авто
+                .order-button.modalToggle#sellauto Хочу продать авто
             .main-wrapper
                 .building-block.greeting-block
                     .building-block__container
@@ -29,7 +29,7 @@ html(lang="en")
                             span 90% 
                             | от рыночной цены
                         .building-block__subheader Узнайте стомость вашего автомобиля за 3 минуты 
-                        .building-block__button Узнать стоимость
+                        .building-block__button.modalToggle Узнать стоимость
                     img(src="./assets/images/content/header3.png", alt="Header Image: Man, car").greeting-block__image
                     
                 #safety.building-block.benefit-block
@@ -59,7 +59,7 @@ html(lang="en")
                     .sign-subblock 
                         .sign-header Запишитесь на встречу
                         .sign-subheader для оценки и продажи автомобиля
-                        .sign-button записаться
+                        .sign-button.modalToggle записаться
                     .sign-subblock.sign-subblock--big
                         .sign-header--big Для продажи авто вам необходимо:
                         .sign-container 
@@ -162,9 +162,35 @@ html(lang="en")
                             .list-item 
                                 .list-mark
                                     img(src="./assets/images/content/cross.svg", alt="checkmark sign").cross-sign
-                                .list-header Авто числится на Вас до момента переоформления на реального покупателя
-                            
+                                .list-header Авто числится на Вас до момента переоформления на реального покупателя                   
         footer#contact.footer 
+            .footer-contact 
+                .footer-logo 
+                    img(src="./assets/images/content/logoWhite.svg", alt="")
+                a.footer-link(href="tel:+79526248191") 
+                    img(src="./assets/images/content/docs.svg", alt="")
+                    span +7(952) 624-81-91
+                .footer-link
+                    img(src="./assets/images/content/money.svg", alt="")
+                    span Ежедневно с 9:00 до 21:00
+            form.footer-form
+                label(for="name").footer-form__label Имя
+                    input(type="text", name="name")#name.footer-form__input 
+                label(for="phone").footer-form__label Телефон
+                    input(type="text", name="phone")#phone.footer-form__input
+                button(type="submit").footer-form__submit Отправить  
+            .footer-info
+                a(href="https://tachki.pro", target="_blank") Больше о нас
+                a(href="https://tachki.pro/catalog", target="_blank") Купить
+                a(href="https://tachki.pro/kredit", target="_blank") Автокредит
+        .dark-layer.js--hidden#darkLayer 
+        form.js--hidden#darkLayerForm.layer-form
+            .layer-form__header Отправить заявку
+            label(for="name").layer-form__label Имя
+                input(type="text", name="name", placeholder="Ваше имя")#name.layer-form__input 
+            label(for="phone").layer-form__label Телефон
+                input(type="text", name="phone", placeholder="Ваш телефон")#phone.layer-form__input
+            button(type="submit").layer-form__submit Отправить  
         script(src="./assets/js/jquery.min.js")
         script(src="./assets/js/plugins.min.js")
         script(src="./assets/js/main.min.js")

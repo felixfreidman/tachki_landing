@@ -25,7 +25,6 @@
 //       right: '0px' 
 //   }, 200); 
 // });
-// header-swiper
 var swiper = new Swiper("#buyoutSwiper", {
   fadeEffect: "cards",
   navigation: {
@@ -54,4 +53,17 @@ var swiper = new Swiper("#buyoutSwiper", {
       spaceBetween: 40
     }
   }
+});
+var allButtons = document.querySelectorAll(".modalToggle");
+var darkLayer = document.getElementById("darkLayer");
+var darkLayerForm = document.getElementById("darkLayerForm");
+allButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    darkLayer.classList.remove("js--hidden");
+    darkLayerForm.classList.remove("js--hidden");
+  });
+});
+darkLayer.addEventListener("click", function () {
+  darkLayer.classList.add("js--hidden");
+  darkLayerForm.classList.add("js--hidden");
 });
