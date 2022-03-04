@@ -941,6 +941,16 @@ html {
 }
 
 @media (max-width: 480px) {
+    .main .main-wrapper .sign-block .sign-subblock--big {
+        height: 270px !important;
+        margin-bottom: 20px;
+    }
+    .building-block .sign-block {
+        height: 580px !important;
+    }
+    .main .main-wrapper {
+        padding-bottom: 0 !important;
+    }
     .main .main-wrapper .benefit-block {
         height: 480px !important;
     }
@@ -1032,7 +1042,7 @@ html {
         margin-top: 0px !important;
     }
     .main .main-wrapper .sign-block {
-        margin-top: 60px !important;
+        margin-top: 0px !important;
     }
     .main .main-wrapper .benefit-block .benefit-block__unit,
     .main .main-wrapper .benefit-block .benefit-block__unit:last-child {
