@@ -941,6 +941,9 @@ html {
 }
 
 @media (max-width: 480px) {
+    .main .main-wrapper .benefit-block {
+        height: 480px !important;
+    }
     .main .main-wrapper .benefit-block .unit-header {
         font-size: 15px;
     }
