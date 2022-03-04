@@ -1091,6 +1091,10 @@ html {
             }
         }
     }
+    .layer-form {
+        width: calc(95vw - 120px);
+        height: calc(90vh - 120px);
+    }
 }
 
 @media (max-width: 340px) {
