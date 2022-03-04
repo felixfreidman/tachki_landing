@@ -11,19 +11,14 @@ var swiper = new Swiper("#buyoutSwiper", {
     // Responsive breakpoints
     breakpoints: {
         // when window width is >= 320px
-        320: {
+        600: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 50,
         },
         // when window width is >= 480px
-        420: {
+        850: {
             slidesPerView: 2,
-            spaceBetween: 30,
-        },
-        // when window width is >= 640px
-        700: {
-            slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 50,
         },
     },
 });
