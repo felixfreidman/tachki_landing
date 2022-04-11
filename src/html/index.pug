@@ -5,14 +5,15 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="./style.min.css")
-        link(rel="shortcut icon", href="./assets/images/content/logo.svg", type="image/x-icon")
+        link(rel="shortcut icon", href="./assets/images/content/Logo.png", type="image/x-icon")
         title Выкуп автомобилей
     body
         main.main#toBegin
             .header-block 
                 .logo-block 
                     a(href="#toBegin")
-                        img(src="./assets/images/content/logo.svg", alt="Logo image: Tachki Logo")
+                        img(src="./assets/images/content/Logo.png", alt="Logo image: Tachki Logo")
+                        .caption АвтоВыкуп 24/7
                 .navigation
                     a(href="#safety").navigation__link Безопасность
                     a(href="#docs").navigation__link Документы
@@ -49,12 +50,12 @@ html(lang="en")
                             .unit-image 
                                 img(src="./assets/images/content/check.svg", alt="")
                             .unit-header Диагностика авто
-                            .unit-subheader Проведем независимую и подробную диагностику вашего автомобиля при оценке
+                            .unit-subheader Бесплатный выезд и оценка специалистом
                         .benefit-block__unit 
                             .unit-image 
                                 img(src="./assets/images/content/money.svg", alt="")
                             .unit-header Деньги при встрече
-                            .unit-subheader Переведем деньги наличными / на карту или на расчетный счет в течение 3 часов
+                            .unit-subheader Деньги вы получите в день сделки
                 #docs.building-block.sign-block
                     .sign-subblock 
                         .sign-header Запишитесь на встречу
@@ -86,14 +87,14 @@ html(lang="en")
                                 .swiper-image 
                                     img(src="./assets/images/content/header.png", alt="")
                                 .swiper-header Легковые
-                            .swiper-slide 
-                                .swiper-image 
-                                    img(src="./assets/images/content/header.png", alt="")
-                                .swiper-header Коммерческие
-                            .swiper-slide 
-                                .swiper-image 
-                                    img(src="./assets/images/content/header.png", alt="")
-                                .swiper-header Битые авто
+                            //- .swiper-slide 
+                            //-     .swiper-image 
+                            //-         img(src="./assets/images/content/header.png", alt="")
+                            //-     .swiper-header Коммерческие
+                            //- .swiper-slide 
+                            //-     .swiper-image 
+                            //-         img(src="./assets/images/content/header.png", alt="")
+                            //-     .swiper-header Битые авто
                             .swiper-slide 
                                 .swiper-image 
                                     img(src="./assets/images/content/header.png", alt="")
@@ -102,10 +103,10 @@ html(lang="en")
                                 .swiper-image 
                                     img(src="./assets/images/content/header.png", alt="")
                                 .swiper-header Проблемные авто (арест)
-                            .swiper-slide  
-                                .swiper-image 
-                                    img(src="./assets/images/content/header.png", alt="")
-                                .swiper-header Дорогие авто (люкс)
+                            //- .swiper-slide  
+                            //-     .swiper-image 
+                            //-         img(src="./assets/images/content/header.png", alt="")
+                            //-     .swiper-header Дорогие авто (люкс)
                         .swiper-navigation 
                             .swiper-button-next 
                             .swiper-button-prev 
@@ -166,7 +167,8 @@ html(lang="en")
         footer#contact.footer 
             .footer-contact 
                 .footer-logo 
-                    img(src="./assets/images/content/logoWhite.svg", alt="")
+                    img(src="./assets/images/content/Logo.png", alt="Logo image: Tachki Logo")
+                    .caption АвтоВыкуп 24/7
                 a.footer-link(href="tel:+79526248191") 
                     img(src="./assets/images/content/docs.svg", alt="")
                     span +7(952) 624-81-91

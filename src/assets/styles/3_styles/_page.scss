@@ -28,12 +28,25 @@ html {
         top: 0px;
         left: 20px;
         .logo-block {
-            width: 150px;
+            width: 320px;
             height: 70px;
             margin-right: auto;
+            display: flex;
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                .caption {
+                    color: #000000;
+                    font-size: 18px;
+                    margin-left: 15px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
             img {
-                width: 100%;
-                height: 100%;
+                width: 40px;
+                height: 40px;
             }
         }
         .navigation {
@@ -54,7 +67,7 @@ html {
             }
         }
         .order-button {
-            background-color: $darkred;
+            background-color: $violet;
             color: #fff;
             height: 50px;
             border-radius: 8px;
@@ -108,7 +121,7 @@ html {
             font-size: 40px;
             margin-bottom: 20px;
             span {
-                color: $darkred;
+                color: $violet;
             }
         }
         .building-block__subheader {
@@ -121,7 +134,7 @@ html {
             color: #fff;
             font-weight: 500;
             font-size: 16px;
-            background-color: $darkred;
+            background-color: $violet;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -193,7 +206,7 @@ html {
                 color: #fff;
                 font-weight: 600;
                 line-height: 20px;
-                color: #a9a9c5;
+                color: #616871;
             }
         }
         .sign-block {
@@ -258,7 +271,7 @@ html {
                     width: 100%;
                     height: 60px;
                     font-size: 16px;
-                    color: $darkred;
+                    color: $violet;
                     background-color: #fff;
                     border-radius: 8px;
                     display: flex;
@@ -343,8 +356,8 @@ html {
             .swiper-button-next,
             .swiper-button-prev {
                 background-image: none;
-                border-top: 3px solid $darkred;
-                border-right: 3px solid $darkred;
+                border-top: 3px solid $violet;
+                border-right: 3px solid $violet;
                 height: 27px;
             }
             .swiper-button-next {
@@ -400,7 +413,7 @@ html {
                     font-size: 24px;
                     color: $darkred;
                     font-weight: 700;
-                    border: 5px solid $darkred;
+                    border: 5px solid $violet;
                     background-color: #fff;
                     text-align: center;
                     height: 80px;
@@ -417,7 +430,7 @@ html {
                     flex-direction: column;
                     align-items: center;
                     width: calc(100% - 40px);
-                    border: 5px solid $darkred;
+                    border: 5px solid $violet;
                     padding: 20px;
                     border-radius: 0 0 20px 20px;
                     .list-item {
@@ -459,7 +472,7 @@ html {
 
 .footer {
     width: calc(100vw - 20px);
-    height: 300px;
+    height: 350px;
     background-color: $newblack;
     display: flex;
     align-items: flex-start;
@@ -475,9 +488,19 @@ html {
             width: 100%;
             height: 60px;
             margin-bottom: 50px;
+            margin-left: 100px;
+            display: flex;
+            align-items: center;
+            .caption {
+                color: #fff;
+                font-size: 18px;
+                margin-left: 15px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
             img {
-                width: 100%;
-                height: 100%;
+                width: 40px;
+                height: 40px;
                 object-fit: contain;
             }
         }
@@ -567,6 +590,11 @@ html {
                 transform: scale(1.1);
                 color: $darkred;
             }
+        }
+    }
+    .footer-contact {
+        .footer-info {
+            display: none;
         }
     }
 }
@@ -674,6 +702,13 @@ html {
     .main .main-wrapper .building-block__header {
         font-size: 36px;
     }
+    .main .header-block .logo-block a .caption {
+        color: #000000;
+        font-size: 12px;
+        margin-left: 5px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -758,6 +793,7 @@ html {
     .footer-contact .footer-logo {
         width: 60%;
         margin-bottom: 20px;
+        margin-left: 0;
     }
     .footer-contact .footer-link img {
         width: 30px;
@@ -896,7 +932,7 @@ html {
         margin-left: auto;
         .footer-info {
             width: 100%;
-            display: flex;
+            display: flex !important;
             align-items: start;
         }
     }
@@ -1087,7 +1123,7 @@ html {
     }
     .footer-contact {
         .order-button {
-            background-color: $darkred;
+            background-color: $violet;
             color: #fff;
             height: 50px;
             border-radius: 8px;
